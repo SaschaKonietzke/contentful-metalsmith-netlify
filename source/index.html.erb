@@ -1,0 +1,19 @@
+---
+title: Welcome to Metalsmith
+---
+
+<div class="welcome">
+  <div class="logo">
+    <%= image_tag "http://www.metalsmith.io/metalsmith.io/images/twitter-image.png" %>
+  </div>
+  <h1>Metalsmith</h1>
+  <p class="doc">
+    <ul>
+    <% data.space.post.each do |id, post| %>
+      <li>
+        <%= post['title'] %> (<%= id %>)
+      </li>
+    <% end %>
+    </ul>
+  </p><!-- .doc -->
+</div><!-- .welcome -->
